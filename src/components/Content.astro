@@ -1,0 +1,37 @@
+---
+import Donering from '../assets/Done_ring_ligth.svg';
+import HeroImage2x from '../assets/hero-image-simple-homepage@2x.png'
+import HeroImage from '../assets/hero-image-simple-homepage.png'
+---
+
+<section class="flex flex-col-reverse gap-8 justify-center md:flex-row items-center altura">
+	<div class="dark:text-[#FFFFFF] text-[#223344] w-full md:w-1/2 gap-y-6 flex flex-col justify-center">
+        <h3 class="uppercase text-sm font-semibold">😎 Simple way to communicate</h3>
+        <h class="text-4xl md:text-6xl font-bold leading-tight">Actions for Accessibility in Design</h>
+        <p class="text-[#909193] dark:text-[#FFFFFF] md:text-[#223344] text-lg font-medium">The fastest way to build and deploy websites with reusable components.</p>
+        <div class="flex items-center gap-6 text-sm">
+            <button class="text-[#FFFFFF] bg-[#2C3EA4] uppercase rounded-lg py-3 px-7">Get Started</button>
+            <button class="font-medium py-2 px-2 dark:text-[#FFFFFF] text-[#2C3EA4] border-b-2 dark:border-[#FFFFFF] border-[#2A4DD0]">Get live demo</button>
+        </div>
+        <div class="flex items-center gap-4 text-sm font-medium">
+            <div class="flex md:text-base text-sm items-center gap-2">
+                <img src={Donering.src} alt="" >
+                <p>No credit card required</p>
+            </div>
+            <div class="flex md:text-base text-sm items-center gap-2">
+                <img src={Donering.src} alt="" >
+                <p>No software to install</p>
+            </div>
+        </div>
+    </div>
+    <div class="md:w-1/2">
+        <img class="hidden md:block" src={HeroImage.src} alt="" srcset="">
+        <img class="block md:hidden" src={HeroImage2x.src} alt="" srcset="">
+    </div>
+</section>
+
+<style is:global>
+    .altura{
+        height: calc(100vh - 72px);
+    }
+</style>
